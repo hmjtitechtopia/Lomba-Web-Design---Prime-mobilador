@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan menulis aksara Bali | Nusa Bali Heritage</title>
+  <meta name="description"
+    content="Latihan menulis 10 aksara wianjana Bali dengan jari atau mouse. Ikuti garis panduan, lalu lihat skor ketepatannya.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=Literata:wght@600;700&family=Noto+Sans+Balinese&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/aksara.css">
+</head>
+
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <a href="index.html#beranda" class="brand">
+        <img class="brand__logo-img" src="assets/images/logo/logo-tulisan.png"
+          alt="Nusa Bali Heritage: Arsip Kebudayaan Pusaka">
+      </a>
+
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="index.html#beranda">Beranda</a>
+        <a href="gamelan.html">Gamelan</a>
+        <a href="tari.html">Tari</a>
+        <a href="aksara.html" aria-current="page">Aksara</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-toggle" type="button" aria-label="Buka menu" id="navToggle" aria-expanded="false"
+          aria-controls="mobileNav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi mobile" hidden>
+      <a href="index.html#beranda">Beranda</a>
+      <a href="gamelan.html">Gamelan</a>
+      <a href="tari.html">Tari</a>
+      <a href="aksara.html" aria-current="page">Aksara</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    
+    <hr class="poleng-divider" aria-hidden="true">
+
+    <section class="section aksara-section" id="bahasa">
+      <div class="container">
+        
+        <div class="aksara-head">
+          <div class="aksara-head__main">
+            <p class="eyebrow">Tradisi aksara Bali: naskah lontar</p>
+            <h1 class="aksara-head__title">Menulis aksara Bali</h1>
+            <p class="aksara-head__desc">
+              Telusuri 10 aksara wianjana (huruf konsonan) dengan jari, mouse, atau stylus. Garis putus-putus jadi panduan, lalu kamu bisa lihat seberapa dekat goresanmu.
+            </p>
+            <div class="aksara-head__meta">
+              <span class="aksara-head__tag">10 aksara wianjana</span>
+              <span class="aksara-head__sep">·</span>
+              <span class="aksara-head__tag">Pengrupak dan lontar</span>
+              <span class="aksara-head__sep">·</span>
+              <span class="aksara-head__tag">Skor kelulusan 75%</span>
+            </div>
+          </div>
+          <figure class="aksara-head__photo media-frame">
+            <img src="assets/images/aksara/lontar-kerti.jpg" alt="Naskah lontar dan pengrupak di Museum Gedong Kirtya">
+            <figcaption class="aksara-head__caption">Naskah lontar dan pengrupak di Gedong Kirtya, Singaraja</figcaption>
+          </figure>
+        </div>
+
+        <div class="aksara-layout">
+          
+          <aside class="aksara-sidebar">
+            
+            <div class="aksara-progress-bar-wrap">
+              <div class="aksara-progress-row">
+                <span class="aksara-progress-status">
+                  <strong class="aksara-stat-num" id="aksaraMasteredCount">0</strong> dari 10 aksara dikuasai
+                </span>
+                <span class="aksara-progress-percent" id="aksaraProgressPercent">0%</span>
+              </div>
+              <div class="aksara-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="aksara-progress-fill" id="aksaraProgressFill"></div>
+              </div>
+            </div>
+
+            <div class="aksara-list-card">
+              <div class="aksara-list-head">
+                <h2 class="aksara-list-title">Urutan aksara wianjana</h2>
+                <span class="aksara-list-kicker" id="aksaraHeaderProgress">0 / 10 tuntas</span>
+              </div>
+
+              <div class="aksara-list" id="aksaraList" role="tablist" aria-label="Daftar Aksara Wianjana">
+              </div>
+            </div>
+          </aside>
+
+          <div class="aksara-workspace">
+            
+            <div class="aksara-workspace__header">
+              <div class="aksara-workspace__titles">
+                <div class="aksara-workspace__title-row">
+                  <h2 class="aksara-workspace__name" id="aksaraActiveName">Aksara Ha</h2>
+                  <span class="aksara-workspace__glyph" id="aksaraActiveGlyph" aria-label="Aksara Bali">ᬳ</span>
+                  <span class="aksara-workspace__unicode" id="aksaraActiveUnicode">U+1B33</span>
+                </div>
+                <p class="aksara-workspace__meaning" id="aksaraActiveMeaning">
+                  Prana, napas awal kehidupan dan ketuhanan
+                </p>
+              </div>
+
+              <div class="aksara-workspace__actions">
+                <button type="button" class="btn btn--outline aksara-btn-next" id="aksaraBtnNext">
+                  Aksara berikutnya
+                </button>
+              </div>
+            </div>
+
+            <div class="aksara-canvas-wrap" id="aksaraCanvasWrap">
+              <canvas id="aksaraCanvas" class="aksara-canvas" aria-label="Kanvas penelusuran aksara"></canvas>
+
+              <div class="aksara-start-dot" id="aksaraStartDot" aria-hidden="true">
+                <span class="aksara-start-dot__pip"></span>
+                <span class="aksara-start-dot__tag">Mulai</span>
+              </div>
+            </div>
+
+            <p class="aksara-canvas-note">Tarik goresan mengikuti garis putus-putus</p>
+
+            <div class="aksara-controls">
+              <div class="aksara-controls__secondary">
+                <button type="button" class="btn btn--outline aksara-btn aksara-btn--secondary" id="aksaraDemoBtn"
+                  aria-label="Peragakan goresan pola aksara">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <polygon points="6 4 18 12 6 20 6 4" />
+                  </svg>
+                  Peragakan goresan
+                </button>
+
+                <button type="button" class="btn btn--outline aksara-btn aksara-btn--secondary" id="aksaraBtnGuide">
+                  Garis panduan
+                </button>
+
+                <button type="button" class="btn btn--outline aksara-btn aksara-btn--secondary" id="aksaraBtnReset">
+                  Hapus dan ulangi
+                </button>
+              </div>
+
+              <div class="aksara-controls__primary">
+                <button type="button" class="btn btn--fill aksara-btn aksara-btn--primary" id="aksaraBtnScore">
+                  Lihat penilaian
+                </button>
+              </div>
+            </div>
+
+            <p class="aksara-hint-text">
+              Mulai dari titik merah dan ikuti garis putus-putus. Tiap aksara terdiri dari beberapa bagian, jadi kamu boleh mengangkat jari di antaranya.
+            </p>
+
+            <div class="aksara-result-panel" id="aksaraResultPanel" hidden>
+              <div class="aksara-result-head">
+                <div class="aksara-result-score-block">
+                  <span class="aksara-result-score" id="aksaraResultScore">0%</span>
+                  <span class="aksara-result-kicker">Nilai ketepatan</span>
+                </div>
+                <div class="aksara-result-feedback">
+                  <div class="aksara-result-label" id="aksaraResultLabel">Menghitung...</div>
+                  <p class="aksara-result-desc" id="aksaraResultDesc">Analisis presisi tarikan garis aksara Bali.</p>
+                </div>
+                <button type="button" class="aksara-result-close" id="aksaraResultClose"
+                  aria-label="Tutup hasil penilaian">Tutup</button>
+              </div>
+
+              <div class="aksara-result-metrics">
+                <div class="aksara-metric-card">
+                  <div class="aksara-metric-header">
+                    <span class="aksara-metric-name">Kedekatan dengan garis</span>
+                    <strong class="aksara-metric-val" id="aksaraPrecisionVal">0%</strong>
+                  </div>
+                  <div class="aksara-metric-bar">
+                    <div class="aksara-metric-fill" id="aksaraPrecisionBar"></div>
+                  </div>
+                </div>
+
+                <div class="aksara-metric-card">
+                  <div class="aksara-metric-header">
+                    <span class="aksara-metric-name">Kelengkapan bentuk</span>
+                    <strong class="aksara-metric-val" id="aksaraCoverageVal">0%</strong>
+                  </div>
+                  <div class="aksara-metric-bar">
+                    <div class="aksara-metric-fill" id="aksaraCoverageBar"></div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="aksara-legend-text">
+                Hijau: dekat dengan garis. Kuning: agak jauh. Merah: jauh dari garis.
+              </p>
+
+              <div class="aksara-result-status" id="aksaraResultStatus"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="kontak">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html#beranda" class="brand">
+            <img class="brand__mark" src="assets/images/logo/logo-tulisan.png" alt="Lambang Nusa Bali Heritage">
+          </a>
+          <p class="footer-tagline">Rwa Bhineda: dua kekuatan yang berbeda tapi saling menjaga keseimbangan hidup.</p>
+          <p class="footer-desc">Arsip dokumentasi kebudayaan Bali yang mencatat seni tari, gamelan, kriya, naskah lontar, dan situs pura yang dirawat desa adat.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tradisi &amp; Ritual</h4>
+          <ul>
+            <li><a href="index.html#filosofi">Upacara Odalan</a></li>
+            <li><a href="index.html#filosofi">Ngaben &amp; Roh Leluhur</a></li>
+            <li><a href="index.html#filosofi">Hari Suci Nyepi</a></li>
+            <li><a href="index.html#situs-budaya">Pawukon &amp; Subak</a></li>
+            <li><a href="index.html#situs-budaya">Tirtha Amerta</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Seni &amp; Kriya</h4>
+          <ul>
+            <li><a href="index.html#tarian">Tari Sanghyang Dedari</a></li>
+            <li><a href="index.html#galeri">Gamelan Gong Kebyar</a></li>
+            <li><a href="index.html#kerajinan">Tenun Ikat Gringsing</a></li>
+            <li><a href="index.html#kerajinan">Ukiran Batu Andesit</a></li>
+            <li><a href="index.html#tarian">Topeng Sidakarya</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Buletin Pusaka</h4>
+          <p class="newsletter-text">Daftar untuk menerima kabar berkala tentang naskah lontar dan dokumentasi tradisi desa.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <label for="newsletterEmail" class="visually-hidden">Alamat email</label>
+            <input type="email" id="newsletterEmail" name="email" placeholder="alamat@email.anda" required>
+            <button type="submit">Kirim</button>
+          </form>
+          <p class="newsletter-note" id="newsletterNote"></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="footerYear">2026</span> Bali Heritage Archive. Sakral &amp; Dilestarikan.</p>
+        <nav aria-label="Tautan legal">
+          <a href="index.html#filosofi">Panduan etika situs</a>
+          <a href="index.html#beranda">Tentang arsip</a>
+          <a href="index.html#kontak">Kontak pengelola</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animate.js" defer></script>
+  <script src="assets/js/aksara-data.js"></script>
+  <script src="assets/js/aksara.js"></script>
+  <script src="assets/js/splash.js" defer></script>
+</body>
+
+</html>
